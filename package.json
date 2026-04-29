@@ -1,0 +1,23 @@
+{
+  "name": "playwright-ts-pom-framework",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {},
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/KatKamenova/playwright-ts-pom-framework.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "type": "commonjs",
+  "bugs": {
+    "url": "https://github.com/KatKamenova/playwright-ts-pom-framework/issues"
+  },
+  "homepage": "https://github.com/KatKamenova/playwright-ts-pom-framework#readme",
+  "devDependencies": {
+    "@playwright/test": "^1.59.1",
+    "@types/node": "^25.6.0"
+  }
+}
