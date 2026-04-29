@@ -29,4 +29,16 @@ export class BasePage {
   async expectURLContains(value: string) {
     await expect(this.page).toHaveURL(new RegExp(value));
   }
+
+  async acceptCookiesIfVisible() {
+    const consentButton = this.page.getByRole("button", { name: /consent/i });
+
+    try {
+      if (await consentButton.isVisible({ timeout: 3000 })) {
+        await consentButton.click();
+      }
+    } catch {
+      // If the button is not found or not visible, we can safely ignore the error
+    }
+  }
 }
